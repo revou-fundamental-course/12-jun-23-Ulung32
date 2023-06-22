@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Temperature Converter</h1>
+    </header>
+    <section>
+        <section class="input-section">
+            <select name="unit-input" id="unit-input">
+                <option value="" disabled selected>satuan awal</option>
+                <option value="F">Fahrenheit (F)</option>
+                <option value="R">Reamur (R)</option>
+                <option value="C">Celcius (C)</option>
+                <option value="K">Kelvin (K)</option>
+            </select>
+            <textarea  id="degree-input" rows="15" cols ="150" placeholder="masukkan suhu yang ingin diubah"></textarea>
+            <!-- <input type="number" id = "degree-input"> -->
+        </section>
+        <section class ="output-section"></div>
+            <select name="unit-output" id="unit-output">
+                <option value="" disabled selected>satuan target</option>
+                <option value="F">Fahrenheit (F)</option>
+                <option value="R">Reamur (R)</option>
+                <option value="C">Celcius (C)</option>
+                <option value="K">Kelvin (K)</option>
+            </select>
+            <textarea id="output" rows="15" cols="150" placeholder="hasil akan ditampilkan disini"></textarea>
+        </section>
+    </section>
+    <section class: "input-button">
+        <button type="submit" onclick="Convert()">Convert</button>
+        <button onclick="reverse()">Reverse</button>
+        <button type="reset" onclick="clearInput()">Reset</button>
+    </section> 
+    <div id="Explanation">
+
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
