@@ -98,14 +98,23 @@ function clearInput(){
     unitInput.selectedIndex = -1
     unitOutput.selectedIndex = -1
     outputVal.value = ""
+    var Explanation = document.getElementById('Explanation')
+    while (Explanation.firstChild) {
+        Explanation.removeChild(Explanation.firstChild);
+    }
 }
 
 function reverse(){
-    var temp = inputVal.value
+    while (Explanation.firstChild) {
+        Explanation.removeChild(Explanation.firstChild);
+    }
     inputVal.value = outputVal.value
-    outputVal.value = temp
+    // outputVal.value = ""
 
     var tempUnit = unitInput.value
     unitInput.value = unitOutput.value
     unitOutput.value = tempUnit
+
+    Convert()
+
 }
